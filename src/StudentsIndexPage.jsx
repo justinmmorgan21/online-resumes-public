@@ -17,8 +17,9 @@ export function StudentsIndexPage() {
       <h1 className="all-students">All Students</h1>
       {
         students.map(student => (
-          <div key={student.id}>
+          <div className="card" key={student.id}>
             <p>{student.first_name} {student.last_name}</p>
+            <p>{student.short_bio}</p>
             <button onClick={()=>handleShow(student)}>Show Resume</button>
             <hr />
           </div>
