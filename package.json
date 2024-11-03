@@ -13,11 +13,8 @@
     "axios": "^1.7.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-<<<<<<< HEAD
     "react-tweet": "^3.2.1"
-=======
     "react-router-dom": "^6.27.0"
->>>>>>> 6d350146c75b67cdbda4d0b23ace3bd6cfd90b43
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
