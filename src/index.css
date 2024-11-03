@@ -148,3 +148,136 @@ img {
   width: 250px;
   height: 250px;
 }
+
+/* General styling for the login container */
+#login {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2em;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Login header */
+#login h1 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  color: #333;
+}
+
+/* Error message styling */
+#login ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 1em;
+  color: #d9534f;
+}
+
+#login li {
+  margin-bottom: 0.5em;
+}
+
+/* Form fields styling */
+#login div {
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+#login input[type="email"],
+#login input[type="password"] {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-top: 0.5em;
+  box-sizing: border-box;
+}
+
+/* Button styling */
+#login button {
+  width: 100%;
+  padding: 0.75em;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(33, 88, 254);
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#login button:hover {
+  background-color: rgb(45, 141, 230);
+}
+
+/* General styling for the signup container */
+#signup {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2em;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Signup header */
+#signup h1 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  color: #333;
+}
+
+/* Error message styling */
+#signup ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 1em;
+  color: #d9534f;
+}
+
+#signup li {
+  margin-bottom: 0.5em;
+}
+
+/* Form fields styling */
+#signup div {
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+#signup input[type="text"],
+#signup input[type="email"],
+#signup input[type="password"] {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  font-size: 1em;
+  margin-top: 0.5em;
+  box-sizing: border-box;
+}
+
+/* Button styling */
+#signup button {
+  width: 100%;
+  padding: 0.75em;
+  border: none;
+  border-radius: 25px;
+  background-color: #007BFF;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#signup button:hover {
+  background-color: rgb(45, 141, 230);
+}
