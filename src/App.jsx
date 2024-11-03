@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import axios from 'axios';
 import { Header } from "./Header";
-// import { HomePage } from "./HomePage";
+import { HomePage } from "./HomePage";
 import { StudentsIndexPage } from "./StudentsIndexPage";
 import { StudentsShowPage } from "./StudentsShowPage";
 import { Footer } from "./Footer";
@@ -109,7 +109,7 @@ function App() {
   return (
     <div>
       <Header />
-      <StudentsPage />
+      <StudentsIndexPage />
       <TwitterEmbed />
       <Footer />
       <RouterProvider router={router} />
