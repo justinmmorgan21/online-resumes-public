@@ -5,6 +5,7 @@ import { Header } from "./Header";
 import { StudentsIndexPage } from "./StudentsIndexPage";
 import { StudentsShowPage } from "./StudentsShowPage";
 import { Footer } from "./Footer";
+import TwitterEmbed from "./TwitterEmbed";
 
 
 const router = createBrowserRouter([
@@ -13,6 +14,7 @@ const router = createBrowserRouter([
       <div>
         <Header />
         <Outlet />
+        <TwitterEmbed />
         <Footer />
       </div>
     ),
@@ -126,7 +128,8 @@ const router = createBrowserRouter([
 ])
 
 function App() {
-  return <RouterProvider router={router} />
+  return (<RouterProvider router={router} />
+  )
 }
 
 export default App;
