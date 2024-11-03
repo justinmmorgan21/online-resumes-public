@@ -18,7 +18,7 @@ const router = createBrowserRouter([
         <Header />
         <LogoutLink />
         <Outlet />
-        <TwitterEmbed />
+        {/* <TwitterEmbed /> */}
         <Footer />
       </div>
     ),
@@ -31,37 +31,41 @@ const router = createBrowserRouter([
         path: "/",
         element: <StudentsIndexPage />,
         loader: ()=> 
-          [
-            {
-              //dummy data goes here
-              first_name: "bob",
-              last_name: "ross",
-              contact_email: "bob@ross.com",
-              phone_number: "555-555-5555"
-            },
-            {
-              //dummy data goes here
-              first_name: "chris",
-              last_name: "ross",
-              contact_email: "bob@ross.com",
-              phone_number: "555-555-5555"
-            },
-            {
-              //dummy data goes here
-              first_name: "debbie",
-              last_name: "ross",
-              contact_email: "bob@ross.com",
-              phone_number: "555-555-5555"
-            },
-            {
-              //dummy data goes here
-              first_name: "julia",
-              last_name: "ross",
-              contact_email: "bob@ross.com",
-              phone_number: "555-555-5555"
-            }
-          ]
-          // axios.get("http://localhost:3000/students.json").then(response => response.data)
+          // [
+          //   {
+          //     //dummy data goes here
+          //     id:1,
+          //     first_name: "bob",
+          //     last_name: "ross",
+          //     contact_email: "bob@ross.com",
+          //     phone_number: "555-555-5555"
+          //   },
+          //   {
+          //     //dummy data goes here
+          //     id:2,
+          //     first_name: "chris",
+          //     last_name: "ross",
+          //     contact_email: "bob@ross.com",
+          //     phone_number: "555-555-5555"
+          //   },
+          //   {
+          //     //dummy data goes here
+          //     id:3,
+          //     first_name: "debbie",
+          //     last_name: "ross",
+          //     contact_email: "bob@ross.com",
+          //     phone_number: "555-555-5555"
+          //   },
+          //   {
+          //     //dummy data goes here
+          //     id:4,
+          //     first_name: "julia",
+          //     last_name: "ross",
+          //     contact_email: "bob@ross.com",
+          //     phone_number: "555-555-5555"
+          //   }
+          // ]
+          axios.get("http://localhost:3000/students.json").then(response => response.data)
       },
       {
         path: "signup",
