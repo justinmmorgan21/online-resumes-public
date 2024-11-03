@@ -5,7 +5,10 @@ import { Header } from "./Header";
 import { StudentsIndexPage } from "./StudentsIndexPage";
 import { StudentsShowPage } from "./StudentsShowPage";
 import { Footer } from "./Footer";
-import TwitterEmbed from "./TwitterEmbed";
+import {TwitterEmbed} from "./TwitterEmbed";
+import { SignupPage } from "./SignupPage";
+import { LoginPage } from "./LoginPage";
+import { LogoutLink } from "./LogoutLink";
 
 
 const router = createBrowserRouter([
@@ -13,6 +16,7 @@ const router = createBrowserRouter([
     element: (
       <div>
         <Header />
+        <LogoutLink />
         <Outlet />
         <TwitterEmbed />
         <Footer />
@@ -58,6 +62,14 @@ const router = createBrowserRouter([
             }
           ]
           // axios.get("http://localhost:3000/students.json").then(response => response.data)
+      },
+      {
+        path: "signup",
+        element: <SignupPage />
+      },
+      {
+        path: "login",
+        element: <LoginPage />
       },
       {
         path: "/students/:id",
