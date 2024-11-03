@@ -1,3 +1,105 @@
-html {
-  scroll-behavior: smooth;
+/* Style the header and nav */
+header {
+  background-color: #1a73e8;
+  /* Blue background */
+  padding: 10px 20px;
+  color: white;
+}
+
+/* Style the navigation container */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* Allows wrapping on smaller screens */
+}
+
+/* Logo styling */
+.Logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  /* White text for the logo */
+  text-decoration: none;
+}
+
+.Logo a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+
+}
+
+/* Search bar container */
+.searchbar {
+  flex: 1;
+  /* Allows search bar to expand in available space */
+  display: flex;
+  justify-content: center;
+}
+
+.searchbar input {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  outline: none;
+  background-color: white;
+}
+
+/* Search button container */
+.searchbutton {
+  margin-left: 10px;
+}
+
+.searchbutton button {
+  padding: 8px 16px;
+  font-size: 1rem;
+  background-color: white;
+  color: #1a73e8;
+  border: 1px solid #1a73e8;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Hover effect for button */
+.searchbutton button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: stretch;
+  }
+
+  .Logo {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .searchbar {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .searchbutton {
+    width: 100%;
+    text-align: center;
+  }
+
+  .profile-container {
+    border: 1px solid black;
+  }
+
+  .all-students {
+    color: rgb(6, 90, 217);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
 }
