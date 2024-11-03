@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom"
+import { useLoaderData } from "react-router-dom";
 export function StudentsIndexPage() {
 
   const students = useLoaderData();
@@ -7,8 +7,10 @@ export function StudentsIndexPage() {
 
   return (
     <main>
-      <h1>All Students</h1>
+      <div className="profile-container">
+      <h1 className="all-students">All Students</h1>
       <p>{students[0].first_name}</p>
+      </div>
     </main>
   )
 }
