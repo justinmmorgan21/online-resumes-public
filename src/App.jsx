@@ -89,8 +89,9 @@ const router = createBrowserRouter([
               resume_url: "http://resume.pdf",
               github_url: "http://github/bobross.com",
               profile_image: "http://myimage.jpg",
-              experience: [
-                  {
+              experiences: [
+                {
+                  id: 1,
                   start_date: "2020-01-01",
                   end_date: "2022-01-01",
                   job_title: "data entry specialist",
@@ -98,31 +99,44 @@ const router = createBrowserRouter([
                   details: "entered so much data"
                 },
                 {
+                  id: 2,
                   start_date: "2020-01-01",
                   end_date: "2022-01-01",
-                  job_title: "data entry specialist",
-                  company_name: "walmart",
-                  details: "entered so much data"
+                  job_title: "salesperson",
+                  company_name: "foot locker",
+                  details: "sold shoes"
                 }
               ],
-              skill: [
+              skills: [
                 {
+                  id: 1,
                   skill_name: "windows"
                 },
                 {
+                  id: 2,
                   skill_name: "outlook"
                 },
                 {
+                  id: 3,
                   skill_name: "word"
                 }
               ],
-              education: [
+              educations: [
                 {
+                  id: 1,
                   start_date: "2010-01-01",
                   end_date: "2014-01-01",
                   degree: "underwater basket weaving",
                   university: "hard knocks",
                   details: "studdeed sooper hard"
+                },
+                {
+                  id: 2,
+                  start_date: "2010-01-01",
+                  end_date: "2014-01-01",
+                  degree: "complex origami",
+                  university: "sesame street",
+                  details: "my fingers hurt bad"
                 }
               ],
               capstone: {
