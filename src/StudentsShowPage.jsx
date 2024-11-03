@@ -1,4 +1,5 @@
 import { useLoaderData } from "react-router-dom"
+import TwitterEmbed from "./TwitterEmbed";
 export function StudentsShowPage() {
 
   const student = useLoaderData()[0];
@@ -50,6 +51,7 @@ export function StudentsShowPage() {
       <p>{student.capstone.description}</p>
       <p>{student.capstone.capstone_url}</p>
       <p>{student.capstone.capstone_image}</p>
+      <TwitterEmbed />
     </div>
   )
 }
