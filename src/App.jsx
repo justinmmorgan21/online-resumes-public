@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import axios from 'axios';
 import { Header } from "./Header";
-import { HomePage } from "./HomePage";
+// import { HomePage } from "./HomePage";
 import { StudentsIndexPage } from "./StudentsIndexPage";
 import { StudentsShowPage } from "./StudentsShowPage";
 import { Footer } from "./Footer";
@@ -17,18 +17,39 @@ const router = createBrowserRouter([
       </div>
     ),
     children: [
+      // {
+      //   path: "/",
+      //   element: <HomePage />,
+      // },
       {
         path: "/",
-        element: <HomePage />,
-      },
-      {
-        path: "/students",
         element: <StudentsIndexPage />,
         loader: ()=> 
           [
             {
               //dummy data goes here
               first_name: "bob",
+              last_name: "ross",
+              contact_email: "bob@ross.com",
+              phone_number: "555-555-5555"
+            },
+            {
+              //dummy data goes here
+              first_name: "chris",
+              last_name: "ross",
+              contact_email: "bob@ross.com",
+              phone_number: "555-555-5555"
+            },
+            {
+              //dummy data goes here
+              first_name: "debbie",
+              last_name: "ross",
+              contact_email: "bob@ross.com",
+              phone_number: "555-555-5555"
+            },
+            {
+              //dummy data goes here
+              first_name: "julia",
               last_name: "ross",
               contact_email: "bob@ross.com",
               phone_number: "555-555-5555"

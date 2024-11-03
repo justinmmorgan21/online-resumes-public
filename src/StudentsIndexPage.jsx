@@ -1,5 +1,5 @@
 import { useLoaderData } from "react-router-dom"
-export function StudentsPage() {
+export function StudentsIndexPage() {
 
   const students = useLoaderData();
 
